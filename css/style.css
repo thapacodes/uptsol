@@ -1,0 +1,607 @@
+:root {
+  --col1: #ef989b;
+  --col2: #fad2e1;
+  --col3: #f4a5ae;
+  --col4: #ffc2c2;
+  --col5: #ab577e;
+  --col6: #ffd8be;
+  --col7: #ffd6a5;
+}
+
+.rit {
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.menu .ser:hover rit i {
+  color: #ab577e;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+* {
+  color: var(--col3);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.make a {
+  display: inline-block;
+  padding: 4px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background: var(--col5);
+}
+.make a:hover {
+  background: var(--col1);
+}
+.make {
+  text-align: right;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+header {
+  width: 100%;
+  background: var(--col5);
+  padding: 8px 0px;
+}
+
+.top .col-md-8 .fi {
+  color: var(--col7);
+  padding-right: 0px 18px;
+}
+.top i {
+  color: var(--col7);
+  padding: 0 10px !important;
+}
+.make a {
+  color: var(--col7);
+}
+.menu {
+  list-style: none;
+  display: flex;
+}
+.menu li a {
+  text-transform: uppercase;
+}
+.menu li {
+  padding: 10px 12px;
+}
+.menu li:last-child {
+  border: 1px solid var(--col5);
+  margin-left: 20px;
+  border-radius: 10px;
+}
+.menu li:last-child:hover {
+  background: var(--col2);
+}
+section.sec1 {
+  padding: 10px 0;
+}
+.logo a {
+  font-size: 40px;
+  color: #383c4b !important;
+  font-weight: 700;
+}
+nav .row {
+  display: flex;
+  align-items: baseline;
+}
+.menu li a:hover {
+  color: var(--col5);
+}
+.active {
+  color: var(--col5);
+}
+.sec1 a {
+  color: var(--col3);
+}
+/* Slider Style Start*/
+#slider_area {
+  width: 100%;
+  overflow: hidden;
+}
+
+#slider_area .item {
+  position: relative;
+}
+
+#slider_area .item::after {
+  position: absolute;
+  background-color: #383c4b;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: "";
+  opacity: 0.6;
+  z-index: 9;
+}
+
+#slider_area .slider_text {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 99;
+}
+
+.slider_text h4 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.slider_text p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 40px 0;
+  line-height: 30px;
+}
+
+.slider_text a {
+  background: var(--col1);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 50px;
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.5s;
+  border-radius: 7px;
+}
+
+.slider_text a:hover {
+  background: var(--col5);
+  color: #fff;
+}
+
+#slider {
+  position: relative;
+}
+
+#slider .owl-dots {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+#slider .owl-dot span {
+  width: 15px;
+  height: 15px;
+  background: none;
+  border: 3px solid var(--col6);
+  transition: 0.5s;
+  border-radius: 0;
+}
+
+#slider .owl-dot.active span {
+  background: var(--col5);
+}
+
+#slider .owl-dot span:hover {
+  background: var(--col1);
+}
+.slider_text h4 {
+  font-weight: 400;
+  word-spacing: 8px;
+}
+.slider_text p {
+  font-size: 15px;
+}
+
+/* Slider Style End*/
+.service {
+  padding: 50px 0;
+}
+.service h3 {
+  font-weight: 300;
+  font-size: 40px;
+}
+.service i {
+  font-size: 25px;
+  display: inline-block;
+}
+
+.service span {
+  display: inline-block;
+  width: 63px;
+  height: 1px;
+  background: var(--col3);
+  position: relative;
+  top: -5px;
+  left: 0;
+}
+.div1 .col-md-4 h3 {
+  font-size: 20px;
+  margin-top: 30px;
+  font-weight: 400;
+}
+.div1 .col-md-4 {
+  margin: 30px 0;
+}
+.sqr {
+  border: 1px solid var(--col5);
+  padding: 20px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transform: rotate(50deg);
+  transition: all 1s;
+}
+.col-md-4:hover .sqr {
+  background: var(--col5);
+}
+.div1 a {
+  color: var(--col5);
+}
+.free {
+  padding: 50px 0;
+  background: url("../img/p.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.free h3 {
+  font-weight: 300;
+  font-size: 40px;
+}
+.client h3 {
+  font-weight: 300;
+  font-size: 40px;
+}
+
+.free a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 15px;
+  border: 1px solid #fff;
+  background: var(--col5);
+  transition: all 1s;
+  color: var(--col7);
+}
+.free .secbtn {
+  background: transparent;
+}
+.free .secbtn:hover {
+  background: var(--col5);
+}
+.free a:hover {
+  background: transparent;
+  color: var(--col7);
+}
+.free p {
+  margin: 25px 0;
+}
+.client {
+  padding: 20px 0;
+  background: var(--col5);
+}
+.client span {
+  display: inline-block;
+  width: 63px;
+  height: 1px;
+  background: var(--col3);
+  position: relative;
+  top: -4px;
+  left: -8px;
+  margin-left: 10px;
+}
+.client i {
+  font-size: 25px;
+  display: inline-block;
+}
+.img {
+  width: 203px;
+  height: 162px;
+  margin: 10px auto;
+  overflow: hidden;
+}
+.img img {
+  width: 100%;
+  height: auto;
+}
+.news .news {
+  padding: 50px 0;
+}
+.news h3 {
+  font-weight: 300;
+  font-size: 40px;
+}
+.news i {
+  font-size: 25px;
+  display: inline-block;
+}
+
+.news span {
+  display: inline-block;
+  width: 63px;
+  height: 1px;
+  background: var(--col3);
+  position: relative;
+  top: -5px;
+  left: -7px;
+  margin-left: 10px;
+}
+.news {
+  padding: 80px 0;
+}
+
+.item1 {
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
+.item2 {
+}
+.item3 {
+}
+.item4 {
+}
+.item5 {
+}
+
+.ad {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 220px 220px;
+  grid-gap: 30px;
+}
+.items img {
+  width: 100%;
+  height: auto;
+}
+.ad .item1 {
+  position: relative;
+}
+.item1 .tex {
+  position: absolute;
+  top: 333px;
+  left: 25px;
+}
+.ad .item2 {
+  position: relative;
+}
+.item2 .tex {
+  position: absolute;
+  top: 128px;
+  left: 25px;
+}
+.ad .item3 {
+  position: relative;
+}
+.item3 .tex {
+  position: absolute;
+  top: 128px;
+  left: 25px;
+}
+.ad .item4 {
+  position: relative;
+}
+.item4 .tex {
+  position: absolute;
+  top: 128px;
+  left: 25px;
+}
+.ad .item5 {
+  position: relative;
+}
+.ad .item5::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgb(24, 23, 23), transparent);
+  opacity: 0.7;
+  z-index: 1;
+  display: block;
+}
+.item5 .tex {
+  position: absolute;
+  top: 128px;
+  left: 25px;
+  z-index: 2;
+}
+.tex h3 {
+  font-size: 20px;
+  color: var(--col4);
+}
+.tex h4 {
+  font-size: 18px;
+  color: var(--col4);
+}
+
+.ad .item4 {
+  position: relative;
+}
+.ad .item4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgb(24, 23, 23), transparent);
+  opacity: 0.7;
+  z-index: 1;
+  display: block;
+}
+.item4 .tex {
+  position: absolute;
+  top: 128px;
+  left: 25px;
+  z-index: 2;
+}
+
+.ad .item3 {
+  position: relative;
+}
+.ad .item3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgb(24, 23, 23), transparent);
+  opacity: 0.7;
+  z-index: 1;
+  display: block;
+}
+.item3 .tex {
+  position: absolute;
+  top: 128px;
+  left: 25px;
+  z-index: 2;
+}
+
+.ad .item2 {
+  position: relative;
+}
+.ad .item2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgb(24, 23, 23), transparent);
+  opacity: 0.7;
+  z-index: 1;
+  display: block;
+}
+.item2 .tex {
+  position: absolute;
+  top: 128px;
+  left: 25px;
+  z-index: 2;
+}
+
+.ad .item1 {
+  position: relative;
+}
+.ad .item1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgb(24, 23, 23), transparent);
+  opacity: 0.7;
+  z-index: 1;
+  display: block;
+}
+.item1 .tex {
+  position: absolute;
+  top: 389px;
+  left: 25px;
+  z-index: 2;
+}
+
+.our {
+  padding: 40px 0 80px;
+  background: var(--col6);
+}
+
+.our h3 {
+  font-weight: 300;
+  font-size: 40px;
+  color: var(--col5);
+}
+.our p {
+  color: var(--col5);
+}
+.our i {
+  font-size: 25px;
+  display: inline-block;
+}
+
+.our span {
+  display: inline-block;
+  width: 63px;
+  height: 1px;
+  background: var(--col3);
+  position: relative;
+  top: -5px;
+  left: -7px;
+  margin-left: 10px;
+}
+.footer {
+  padding: 80px 0;
+}
+.sub-us {
+  text-align: center;
+}
+.sub-us a {
+  width: 70%;
+}
+.sub-us input {
+  width: 70%;
+  margin: 0 auto 20px;
+}
+.footer ul {
+  text-decoration: none;
+  list-style: none;
+}
+.footer ul li {
+  margin-bottom: 10px;
+}
+.footer h4 {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 19px;
+}
+.con a {
+  padding-left: 10px;
+}
+.lfoot {
+  padding: 20px 0;
+  background: var(--col5);
+}
+.clr {
+  background: var(--col5);
+}
+.clr {
+  color: #fff;
+}
+.footer li a {
+  color: var(--col5);
+}
+.gotop {
+  position: fixed;
+  background-color: var(--col6);
+  color: var(--col5);
+  width: 45px;
+  height: 45px;
+  right: 15px;
+  bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(50deg);
+}
+.gotop i {
+  transform: rotate(-45deg);
+}
